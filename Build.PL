@@ -8,8 +8,10 @@ my $builder = Module::Build->new(
     dist_author         => 'Daniel Muey <http://drmuey.com/cpan_contact.pl>',
     dist_version_from   => 'lib/DateTime/Format/Human/Duration.pm',
     requires => {
-        'Test::More' => 0,
         'version'    => 0,
+    },
+    build_requires => {
+        'Test::More' => 0,
     },
     add_to_cleanup      => [ 'DateTime-Format-Human-Duration-*' ],
 );
